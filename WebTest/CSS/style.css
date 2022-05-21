@@ -1,0 +1,97 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.welcome{
+    background-image: url("../SRC/background.png");
+    background-position: center;
+    background-size: cover;
+    
+    padding: 70px
+}
+.welcome h1{
+    color: whitesmoke;
+    font-size: 28px;    
+}
+.basic_section{
+    padding: 20px 100px;
+}
+.basic_section:nth-child(odd){
+    background-color: #5B5B5B;
+}
+.basic_section:nth-child(even){
+    background-color: #777777;
+}
+
+.centered_text{
+    text-align: center;
+}
+.text_special{
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+
+section{
+    display: none;
+}
+.section-active{
+    display: block
+}
+
+.nav_bar{
+    background-color: dimgray;
+    height: 55px;
+    position: fixed;
+    width: 100%
+}
+.nav_list{
+    float: left;
+}
+.nav_list li{
+    display: inline-block;
+}
+.nav_list li a{
+    color: white;
+    margin: 0 10px;
+    
+    text-decoration: none;
+}
+.nav_list li a:hover{
+    color: skyblue;
+}
+
+.tab-active{
+    color: #00ff7b !important;
+}
+
+.footer{
+    background-color: dimgray;
+    padding: 20px 15px;
+    letter-spacing: 2px
+}
+.footer a{
+    color: white;
+    margin: 0 10px
+}
+.footer a:hover{
+    color: skyblue;
+    margin: 0 10px
+}
+
+.form input{
+    padding: 3px; 
+    background-color: lightgray;
+    
+    border: 3px solid #444444;
+    border-radius: 10px;
+    
+    margin: 5px 7px
+}
+
+

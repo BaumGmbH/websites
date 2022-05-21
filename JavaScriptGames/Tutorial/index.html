@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme">
+
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    
+    <div class="header">
+        <p style="font-size: 30px;">Spiele das beste RPG</p>
+    </div>
+    <div class="start">
+        <a href="#" onclick="GameManager.loadCharSelect()">Spiel Starten</a>
+    </div>
+    <div class="interface">
+        
+    </div>
+    <div class="actions">
+
+    </div>
+    <div class="enemy">
+
+    </div>
+
+    <div style="display: none;" class="char-select">
+        <a href="#" onclick="GameManager.setGameStart('Kämpfer')">
+            <img src="img/kämpfer.jpg" alt="Kämpfer">
+            <div>
+                <h3>Kämpfer</h3>
+                <p>Kämpfer haben viel Stärke und Ausdauer, aber ihre Stärke macht sie auch langsamer und ungeschickter.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Rouge')">
+            <img src="img/rouge.jpg" alt="Rouge">
+            <div>
+                <h3>Rouge</h3>
+                <p>Rouges sind schnell und haben ein viel Ausdauer sowie ein hohes Tempo, was ihren Mangel an Kraft und Leben wettmacht.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Magier')">
+            <img src="img/magier.jpg" alt="Magier">
+            <div>
+                <h3>Magier</h3>
+                <p>Magier stecken ganze Anstrengung in Zaubersprüche. Dies bedeutet, dass sie auf alles andere vernachlässigen.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Jäger')">
+            <img src="img/jäger.jpg" alt="Jäger">
+            <div>
+                <h3>Jäger</h3>
+                <p>Jäger sind vielseitige Kämpfer, die sich darauf konzentrieren, ihre Fähigkeiten auszugleichen. Keine Stärken oder Schwächen.</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>

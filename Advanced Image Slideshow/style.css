@@ -1,0 +1,27 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#imgs {
+    width: 100%;
+    padding: 0.5%;
+}
+
+img {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: auto 0;
+}
+
+#img1 {
+    display: none;
+}
+#img2 {
+    position: relative;
+    left: 20%;
+}
+#img3 {
+    display: none;
+}

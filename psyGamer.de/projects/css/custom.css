@@ -1,0 +1,9 @@
+/* Put your custom styles here */
+.download {
+    min-height: 100vh;
+}
+
+.btn-download {
+    position: relative;
+    top: 373px;
+}

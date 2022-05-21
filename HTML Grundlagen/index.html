@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="test.js"></script>
+    <script src="../easyJ.js"></script>
+</head>
+
+<body>
+    <a href="blog.html">BlogPost</a>
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraph -->
+    <p>
+        Lorem Ipsmu Lorem Ipsum <a href="https://google.com" target="_blank">muspI meroL</a> Ipsum Lorem
+    </p>
+
+    <!-- Lists -->
+    <div class="container">
+        <div class="unordered-list">
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+            </ul>
+        </div>
+        <div class="ordered-list">
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brad Trabersy</td>
+                <td>brad@something.com</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>jdoe@something.com</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>Sara Williams</td>
+                <td>sara@something.com</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <hr>
+
+    <!-- Forms -->
+    <div class="form">
+        <form action="process.php" method="post">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="first-name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="last-name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <hr>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Birthday</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit" class="button">
+        </form>
+    </div>
+
+    <hr>
+    <hr>
+
+    <!-- Buttons -->
+    <button>Click ME</button>
+
+    <br>
+    <br>
+
+    <!-- Blocks -->
+
+    <div class="block">
+        <h3>Heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo.
+        </p>
+    </div>
+    <div class="block">
+        <h3>Heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo.
+        </p>
+    </div>
+    <div class="block">
+        <h3>Heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo.
+        </p>
+    </div>
+
+    <div class="clr"></div>
+
+    <div id="main-block">
+        <h3>Heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo.
+        </p>
+    </div>
+    <div id="sidebar">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo.
+        </p>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="pos-box">
+        <h1>Hello</h1>
+        <h2>GoodBye</h2>
+    </div>
+
+    <ul class="my-list">
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ul>
+
+    <!--<a class="fix-me button"></a> -->
+
+    <!-- Image -->
+    <a href="Images/Mountain.jpg">
+        <img src="Images/Mountain.png" alt="Mountain Imgae" width="200">
+    </a>
+
+    <!-- Quotations -->
+    <blockquote cite="http://traversymedia.com">
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+    </blockquote>
+
+    <p><cite>HTML</cite> Crash Course by Brad Traversy</p>
+
+    <footer>
+        <div class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a>Category 1</a></li>
+                <li><a>Category 2</a></li>
+                <li><a>Category 3</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

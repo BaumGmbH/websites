@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+*,
+*:root {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  width: 75vw;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 10vh;
+      grid-template-rows: 10vh;
+      grid-template-areas: "logo nav";
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9e9e9;
+  padding: 0 4rem 0 0;
+  border-radius: 0 0 5rem 0;
+}
+
+header nav ul {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav ul .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 2rem;
+}
+
+header nav ul .nav-item a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #494949;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+header nav ul .nav-item a::after {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.4rem;
+  width: 80%;
+  max-width: 0;
+  background: #4EACE1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header nav ul .nav-item a:hover {
+  color: #20CCC1;
+}
+
+header nav ul .nav-item a:hover::after {
+  max-width: 100%;
+}
+
+header nav #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  padding: 0 0 0 5rem;
+  font-size: 3rem;
+  color: #494949;
+}
+
+#landing {
+  height: 105vh;
+}
+
+#landing #splash-text {
+  height: 90vh;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -10rem 0 0 -50rem;
+}
+
+#landing #splash-text .headline {
+  font-size: 5.2rem;
+  font-weight: bolder;
+}
+
+#landing #splash-text .slogan {
+  font-size: 3.2rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#landing #btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 25vh;
+  margin: 0 0 0 -50rem;
+}
+
+#landing #btns a {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 3.3rem;
+  line-height: 3rem;
+  text-decoration: none;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+}
+
+#landing #btns .my-projects-btn {
+  color: #d9faf8;
+  background: #479cce;
+  margin: 0 7.5rem 0 1.75rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#landing #btns .my-projects-btn:hover {
+  color: #fff;
+  background: #5ac1fd;
+}
+
+#landing #btns .about-me-btn {
+  color: #494949;
+  border: 0.5rem solid;
+  border-color: #479cce;
+  margin: 0 7.5rem 0 1.75rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#landing #btns .about-me-btn:hover {
+  color: #414141;
+  border-color: #5ac1fd;
+}
+
+#my-projects h2 {
+  margin: 0;
+  padding: 15rem 0 0 0;
+  font-size: 3.8rem;
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+#my-projects h2::after {
+  content: '';
+  height: 1rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #479cce;
+  margin: 0.5rem auto 0 auto;
+}
+
+#my-projects #projects {
+  height: 65vh;
+  width: 70vw;
+  margin: 4.5rem 0 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#my-projects #projects .project {
+  height: 60vh;
+  width: 25vw;
+  background: #e9e9e9;
+  border: 0.3rem solid #494949;
+  margin: auto;
+}
+
+#my-projects #projects .project h3 {
+  text-align: center;
+  margin: 1rem 0 0 0;
+  font-family: 'Sen', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#my-projects #projects .project img {
+  max-width: 90%;
+  max-height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto 0 auto;
+}
+
+#my-projects #projects .project p {
+  font-family: 'Sen', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+
+#my-projects #projects .project a {
+  font-family: 'Sen', sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  height: 5rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  background: #479cce;
+  border-radius: 1rem;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+#my-projects #projects .project a:hover {
+  background: #5ac1fd;
+}
+/*# sourceMappingURL=style.css.map */

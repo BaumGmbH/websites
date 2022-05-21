@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;   
+    background-color: #1f3434;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: white 1px solid;
+    margin-top: 40px;
+    opacity: 0;
+    
+    animation-name: button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+    transition: background-color 0.2s;
+}
+a:hover {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: white 1px solid;
+    margin-top: 40px; 
+    background-color: rgba(60, 103, 103, 0.53)
+}
+
+@keyframes button {
+    0%   {opacity: 0;   }
+    100% {opacity: 100;}
+}

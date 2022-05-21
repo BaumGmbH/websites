@@ -1,0 +1,42 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: lightblue;
+    outline: none;
+    border: 2px rgb(0, 106, 177) solid;
+
+    height: 60px;
+    width: 200px;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+
+    animation: fade 1s ease forwards;
+
+    &:hover {
+        background: lightskyblue;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

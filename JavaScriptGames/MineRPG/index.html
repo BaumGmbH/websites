@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MineCard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/random.js"></script>
+
+    <script src="js/enemy.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/gamemanager.js"></script>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>MineCard</h1>
+        <p>Ein Minecraft Karten Spiel</p>
+    </div>
+    <div class="interface start">
+        <a href="#" id="start-btn" class="active" onclick="GameManager.loadCharSelect()">Spiel Starten</a>
+    </div>
+    <div class="actions">
+
+    </div>
+    <div class="enemy">
+
+    </div>
+    </div>
+
+    <!--<div id="popup">
+
+    </div>
+    <div class="active" id="overlay">
+
+    </div>-->
+
+    
+
+    <div style="display: none;" class="char-select">
+        <ul id="char-select-list">
+            <li class="char-select-item">
+                <img src="img/creeper.png" alt="">
+                <h2>Creeper</h2>
+                <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis qui repudiandae placeat nulla deserunt! Nostrum quia deserunt, nesciunt ratione facere minus magni possimus facilis a quibusdam dicta modi nam consequatur sapiente ut temporibus corrupti earum expedita quod tenetur molestiae. Nemo magnam vero dolorem repudiandae fugit deleniti excepturi perspiciatis, debitis ab. Dicta
+                </p>
+                <div>
+                    <h3>Statistiken</h3>
+                    <ul>
+                        <li>Leben:</li>
+                        <li>Stärke: </li>
+                        <li>Resistenz: </li>
+                        <li>Geschicklichkeit: </li>
+                        <li>Geschwindigkeit: </li>
+                    </ul>
+                    <a href="#" onclick="GameManager.setGameStart('Creeper')">Auswählen</a>
+                </div>
+            </li>
+            <li class="char-select-item">
+                <img src="img/creeper.png" alt="">
+                <h2>Creeper</h2>
+                <p>
+                        Lorem ipsum dolor sit amet
+                </p>
+                <div>
+                    <ul>
+                        <li>Leben:</li>
+                        <li>Stärke: </li>
+                        <li>Resistenz: </li>
+                        <li>Geschicklichkeit: </li>
+                        <li>Geschwindigkeit: </li>
+                    </ul>
+                    <a href="#" onclick="GameManager.setGameStart('Creeper')">Auswählen</a>
+                </div>
+            </li><li class="char-select-item">
+                <img src="img/creeper.png" alt="">
+                <h2>Creeper</h2>
+                <p>
+                        Lorem ipsum dolor sit amet
+                </p>
+                <div>
+                    <ul>
+                        <li>Leben:</li>
+                        <li>Stärke: </li>
+                        <li>Resistenz: </li>
+                        <li>Geschicklichkeit: </li>
+                        <li>Geschwindigkeit: </li>
+                    </ul>
+                    <a href="#" onclick="GameManager.setGameStart('Creeper')">Auswählen</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Minecraft";
+    src: url(fonts/minecraft/minecraft.eot);
+    src: 
+    url(fonts/minecraft/minecraft.woff) format("woff"),
+    url(fonts/minecraft/minecraft.ttf) format("truetype"),
+    url(fonts/minecraft/minecraft.svg) format("svg");
+}
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('fonts/minecraftia/minecraftia.eot');
+    src: url('fonts/minecraftia/minecraftia.eot?#iefix') format('embedded-opentype'),
+         url('fonts/minecraftia/minecraftia.woff') format('woff'),
+         url('fonts/minecraftia/minecraftia.ttf') format('truetype'),
+         url('fonts/minecraftia/minecraftia.svg#Minecraftia') format('svg');
+  }
+
+/* General */
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Minecraftia', sans-serif;
+}
+
+/* Header */
+
+.header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header > h1 {
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+.header > p {
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+/* Interface - Start */
+
+.interface.start {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.interface.start > a {
+    text-decoration: none;
+    margin-top: 3rem;
+    background: url(img/start_btn.png);
+    background-size: contain;
+    width: 24.8rem;
+    height: 5.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
+    transition: all 150ms;
+}
+.interface.start > a:hover {
+    background: url(img/start_btn_hover.png);
+    background-size: contain;
+    font-size: 1.8rem;
+}
+.interface.start > a:active {
+    background: url(img/start_btn_active.png);
+    background-size: contain;
+}
+
+/* Interface - Char Select */
+
+.interface.char-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 25%;
+    top: 3rem;
+}
+.interface.char-select > ul > li {
+    background: red;
+    background-size: cover;
+    color: blue;
+    width: 50vw;
+    list-style: none;
+}
+.interface.char-select > ul > li > div {
+    background: green;
+    max-height: 0;
+    opacity: 0;
+    display: none;
+    transition: all 700ms;
+}
+.interface.char-select > ul > li:hover > div {
+    max-height: 100rem;
+    opacity: 1;
+    display: inline;
+}

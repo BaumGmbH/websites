@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<script>
+		function StartCalc () {
+			var num1 = parseInt(document.querySelector("#num1").value);
+			var num2 = parseInt(document.querySelector("#num2").value);
+			var operator = document.querySelector("#operator").value;
+			
+			var array = [num1, num2, operator];
+			console.log(array);
+			console.log(num1);
+			if(num1 == undefined) {
+				alert();
+			}
+			if(document.querySelector("#num1").value == "") {
+				alert();
+			}
+			if(parseInt(document.querySelector("#num1").value) == NaN) {
+				alert(0);
+			}
+			
+
+			/*var result = Calc(num1, num2, operator);
+			
+			//alert("Das Ergebniss ist: " + result);*/
+		
+		}
+		function Calc(num1, num2, operator) {
+			switch(operator) {
+				case "add":
+					return num1 + num2;
+					break;
+				case "sub":
+					return num1 - num2;
+					break;
+				case "mul":
+					return num1 * num2;
+					break;
+				case "div":
+					return num1 / num2;
+					break;
+				default:
+					return null;
+					break;
+			}
+		}
+	</script>
+	<style>
+		body {
+			text-align: center;
+			font-family: Arial, sans-serif;
+		}
+		input {
+			margin-top: 10px;
+		}
+		select {
+			margin-right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<h3>Created by psyGamer21</h3>
+	<form>
+		Number 1<input type="text" id="num1"> <br/>
+		Number 2<input type="text" id="num2"> <br/>
+		Operation
+		<select id="operator">
+			<option value="add">Plus</option> 
+			<option value="sub">Minus</option>
+			<option value="mul">Multiply</option>
+			<option value="div">Divide</option>
+		</select>
+		<button type="button" onClick="StartCalc()">dawd</button>
+	</form>
+	
+</body>
+</html>

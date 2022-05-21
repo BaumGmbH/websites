@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+    
+    display: flex;
+
+    justify-content: center;
+}
+
+.parent {
+    height: 100vh;
+    border: 20px solid black;
+
+    display: flex;
+}
+
+.child1 {
+    width: 200px;
+    height: 200px;
+    background: rgb(39, 61, 134);
+    
+}
+.child2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(172, 57, 53);
+
+    align-self: center;
+    justify-self: center;
+}
+.child3 {
+    width: 200px;
+    height: 200px;
+    background: rgb(149, 43, 140);
+
+}
+.child4 {
+    width: 200px;
+    height: 200px;
+    background: rgb(2, 139, 9);
+
+}

@@ -1,0 +1,79 @@
+header {
+    position: fixed;
+    top: 0;
+
+    nav {
+
+        display: grid;
+        width: 75vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh;
+        grid-template-areas: "logo nav";
+
+        font-family: 'Poppins', sans-serif;
+
+        background-color: rgba(233, 233, 233, 68);
+        padding: 0 4rem 0 0;
+        border-radius: 0 0 5rem 0;
+
+        ul {
+            grid-area: nav;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .nav-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 0 0 0 2rem;
+
+                a {
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: $text;
+
+                    transition: color 0.3s ease;
+
+                    &::after {
+                        content: '';
+
+                        display: flex;
+
+                        height: 0.4rem;
+                        width: 80%;
+
+                        max-width: 0;
+
+                        background: $main;
+
+                        transition: all 0.2s ease;
+                    }
+
+                    &:hover {
+                        color: $otherDark;
+
+                        &::after {
+                            max-width: 100%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-area: logo;
+
+            padding: 0 0 0 5rem;
+
+            font-size: 3rem;
+            color: $text;
+        }
+    }
+}
